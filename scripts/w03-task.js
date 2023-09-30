@@ -53,39 +53,41 @@ document.querySelector('#divideNumbers').addEventListener('click', divideNumbers
 
 
 /* Decision Structure */
-const currentDate = new Date();
+let currentDate = new Date();
 let currentYear;
-
-if (currentDate instanceof Date && !isNaN(currentDate)) {
-    currentYear = currentDate.getFullYear();
-} else {
-    currentYear = 'Invalid Date';
-}
-
+currentYear = currentDate.getFullYear();
 document.querySelector('#year').value = currentYear;
 
-const numbersArray = Array.from({ length: 13 }, (_, i) => i + 1);
 
+let numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 
-document.getElementById('array').textContent = numbersArray.join(', ');
+        document.querySelector('#array').textContent = numbersArray;
 
+        let oddNumbers = numbersArray.filter(number => number % 2 === 1);
 
-const oddNumbers = numbersArray.filter(num => num % 2 === 1);
-document.getElementById('odds').textContent = oddNumbers.join(', ');
+        
+        document.querySelector('#odds').textContent = oddNumbers;
 
+        
+        let evenNumbers = numbersArray.filter(number => number % 2 === 0);
 
-const evenNumbers = numbersArray.filter(num => num % 2 === 0);
-document.getElementById('evens').textContent = evenNumbers.join(', ');
+        
+        document.querySelector('#evens').textContent = evenNumbers;
 
+        
+        let sum = numbersArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
-const sumOfArray = numbersArray.reduce((acc, num) => acc + num, 0);
-document.getElementById('sumOfArray').textContent = sumOfArray;
+       
+        document.querySelector('#sumOfArray').textContent = sum;
 
+        
+        let multipliedArray = numbersArray.map(number => number * 2);
 
-const multipliedArray = numbersArray.map(num => num * 2);
-document.getElementById('multiplied').textContent = multipliedArray.join(', ');
+        
+        document.querySelector('#multiplied').textContent = multipliedArray;
 
+        
+        let sumOfMultiplied = multipliedArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
-const sumOfMultiplied = multipliedArray.reduce((acc, num) => acc + num, 0);
-document.getElementById('sumOfMultiplied').textContent = sumOfMultiplied;
-
+        
+        document.querySelector('#sumOfMultiplied').textContent = sumOfMultiplied;

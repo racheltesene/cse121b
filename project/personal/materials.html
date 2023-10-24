@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Materials</title>
+    <style>
+        .tab {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="navigation">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/idol_lights.avif" alt="Idol Lights Logo">
+            </a>
+            <nav>
+                <a href='index.html'>Products</a>
+                <a href='him.html'>How It's Made</a>
+                <a href="materials.html">Materials</a>
+                <a href='site_plan.html'>Site Plan</a>
+            </nav>
+        </header>
+    </div>
+    <div>
+        <section id="title-msg">
+            <h1 class="first-title">Materials</h1>
+        </section>
+    </div>
+    <div class="tab-container">
+        <button class="tab-button" onclick="showTab('filamentTab')">Filaments</button>
+        <button class="tab-button" onclick="showTab('acetoneTab')">Acetone & Rubbing Alcohol</button>
+        <button class="tab-button" onclick="showTab('otherTab')">Everything Else</button>
+    </div>
+    <div class="tab-content">
+        <div id="filamentTab" class="tab">
+            <section class="black">
+                <img class="card-img" src="images/black.jpg" alt="Overture Matte Black Filament">
+                <div class="materials-button">
+                    <a href="https://a.co/d/iVTFuro">Overture Matte Black PLA Filament</a>
+                </div>
+            </section>
+            <section class="white">
+                <img class="card-img" src="images/white.jpg" alt="Overture Matte White Filament">
+                <div class="materials-button">
+                    <a href="https://a.co/d/64a04l9">Overture Matte White PLA Filament</a>
+                </div>
+            </section>
+            <!-- Add more filament sections here -->
+        </div>
+
+        <div id="acetoneTab" class="tab">
+            <section class="acetone">
+                <img class="card-img" src="images/acetone2.png" alt="100% Acetone">
+                <div class="materials-button">
+                    <a href="https://www.walmart.com/ip/Onyx-Professional-100-Pure-Acetone-Nail-Polish-Remover-16-fl-oz/11047134?athbdg=L1200&from=/search">100% Acetone</a>
+                </div>
+            </section>
+            <section class="alcohol">
+                <img class="card-img" src="images/alchol.png" alt="Rubbing Alcohol">
+                <div class="materials-button">
+                    <a href="https://www.walmart.com/ip/Equate-91-Isopropyl-Alcohol-Antiseptic-32-fl-oz/276040459?athbdg=L1200">Rubbing Alcohol</a>
+                </div>
+            </section>
+            <!-- Add more acetone and alcohol sections here -->
+        </div>
+
+        <div id="otherTab" class="tab">
+            <section class="thankucard">
+                <img class="card-img" src="images/cards.jpg" alt="Thank You Business Cards">
+                <div class="materials-button">
+                    <a href="https://www.gotprint.com/home.html?persist=true&vendorId=1030&gclid=Cj0KCQjwqNqkBhDlARIsAFaxvwwafH2x8vNGMW_E4-miy63_y8G9GViVgGxeRewzolhTIFBKPhVreQQaAgn2EALw_wcB">Custom Made Business Cards</a>
+                </div>
+            </section>
+            <section class="paper">
+                <img class="card-img" src="images/tissuepaper.jpg" alt="Tissue Paper">
+                <div class="materials-button">
+                    <a href="https://www.gotprint.com/home.html?persist=true&vendorId=1030&gclid=Cj0KCQjwqNqkBhDlARIsAFaxvwwafH2x8vNGMW_E4-miy63_y8G9GViVgGxeRewzolhTIFBKPhVreQQaAgn2EALw_wcB">Tissue Paper</a>
+                </div>
+            </section>
+            <section class="mailers">
+                <img class="card-img" src="images/bubble.jpg" alt="Bubble Mailers">
+                <div class="materials-button">
+                    <a href="https://a.co/d/cMA1w8d">Bubble Mailers</a>
+                </div>
+            </section>
+            <section class="labels">
+                <img class="card-img" src="images/labels.jpg" alt="Thermal Printer Shipping Labels">
+                <div class="materials-button">
+                    <a href="https://a.co/d/gpOBpJg">Thermal Printer Shipping Labels</a>
+                </div>
+            </section>
+            <!-- Add more sections for other materials here -->
+        </div>
+    </div>
+    <footer>
+        <p>Idol Lights &copy; 2023 - Rachel Tesene</p>
+        <p><a href="site_plan">Site Plan</a></p>
+        <a href='index.html'>Products</a>
+        <div class="social">
+            <a href="https://www.facebook.com/RachelTesene/" target="_blank">
+                <img src="https://byui-wdd.github.io/wdd130/rafting_images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com/RachisKpopTrash" target="_blank">
+                <img src="https://byui-wdd.github.io/wdd130/rafting_images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://www.instagram.com/racheliskpoptrash/" target="_blank">
+                <img src="https://byui-wdd.github.io/wdd130/rafting_images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script>
+        function showTab(tabId) {
+            const tabs = document.getElementsByClassName('tab');
+            for (let i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = 'none';
+            }
+            document.getElementById(tabId).style.display = 'block';
+        }
+
+        // Show the first tab by default
+        showTab('filamentTab');
+    </script>
+</body>
+</html>
+

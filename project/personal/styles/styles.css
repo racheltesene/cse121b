@@ -1,0 +1,347 @@
+
+body, h1, h4, p {
+    margin: 0;
+    padding: 0;
+  }
+  h4 {
+     text-decoration-line: underline;
+  }
+  
+  body {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 22px;
+    background-color: pink;
+    color: #333333;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 100px auto;
+    background-color:#FF6FD2;
+    text-align: left;
+    margin: 0 auto;
+    }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+
+  
+  #navigation {
+    margin: 0 auto;
+    max-width: 1600px
+  }
+  
+  #logo_link {
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .logo {
+    margin: 10px;
+    max-width: 100%;
+    border-radius: 20%;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+}     
+  nav a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    padding: 35px;
+  }
+  nav a:hover {
+    background-color: #FF2F5A;
+    color: black;
+    text-decoration:none;
+    text-align: center;
+    margin: 10px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    }
+  h4 {
+    text-decoration: underline;
+  }
+
+  #title-msg {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .home-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: var(--heading-font);
+  }
+  
+  .button-box {
+    margin-top: 20px;
+  }
+  
+  .button-box a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333333;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .button-box a:hover {
+    background-color: #3FF3F5;
+    color: black;
+  }
+  
+ 
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .product-grid section {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom:20px
+  }
+
+  
+  .card-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .listing-button a {
+    display: block;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .listing-button a:hover{
+    background-color: #3FF3F5;
+    color: black;
+
+  }
+
+  #title-msg{
+    font-size: 40px;
+    
+  }
+  .sketchup-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 20px;
+    padding: 20px;}
+  
+  .sketchup {
+    grid-row: 1/2;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    justify-self: center;
+    background-color: black;
+    padding: 10px;
+  }
+  
+  #sketchup_msg {
+    grid-row: 2/2;
+    text-align: center;
+  }
+  
+
+  .design-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin: 40px;
+
+    
+  }
+
+  .sclass-img{
+    width: 100%;
+    grid-column: 1/2;
+    text-align: left;
+    background-color: black;
+    
+  }
+.bouncy-img{
+  grid-column: 2/2;
+  width: 100%;
+  text-align: right;
+  background-color: black;
+  
+}
+
+.room-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+  margin: 40px;
+}
+
+.room-img{
+grid-row:1/2 ;
+grid-column: 1/2 ;
+width: 100%;
+text-align: center;
+}
+
+.shelf-img{
+grid-row: 2/2;
+grid-column: 2/2;
+width: 100%;
+text-align: right;
+}
+
+.printer-setup{
+  grid-row:1/2 ;
+  grid-column: 2/2 ;
+}
+
+.work-balance{
+  grid-row:2/2 ;
+  grid-column: 1/2 ;
+}
+
+.filament-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.filament-grid section {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.filament-grid section .card-img {
+  max-width: 20px; /* Adjust the maximum width as needed */
+  height: auto; /* Allow the height to adjust proportionally */
+  border: 2px solid #333333;
+  border-radius: 10px;
+}
+
+
+
+.materials-button a {
+  display: block;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+.materials-button a:hover{
+  background-color: #3FF3F5;
+}
+
+
+
+#title2-msg{
+  grid-row: 4/7;
+  text-align: center;
+  font-size: 40px;
+  grid-row: 3/5;
+  -ms-grid-column-span: 100%;
+  
+text-align: center;
+}
+
+
+
+  footer {
+    background-color: #FF6FD2;
+    color: black;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  #title2-msg{
+    text-align: center;
+  }
+
+  footer p, footer a {
+    color: black;
+  }
+  
+
+  footer a:hover{
+color: pink
+  }
+  .social img {
+    width: 5%;
+    
+    
+  }
+  
+  .social a{
+    text-decoration: none;
+  }
+
+  .social{
+    text-align: center;
+  }
+
+ 
+  form {
+    border: 4px solid pink;
+  }
+  
+  /* Add some padding and a grey background color to containers */
+  .container {
+    padding: 20px;
+    background-color: pink;
+  }
+  
+  /* Style the input elements and the submit button */
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    
+    box-sizing: border-box;
+  }
+  
+  /* Add margins to the checkbox */
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #3FF3F5;
+    color: black;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.5;
+  }
+

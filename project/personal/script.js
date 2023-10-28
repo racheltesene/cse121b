@@ -6,5 +6,5 @@ function showTab(tabId) {
     document.getElementById(tabId).style.display = 'block';
 }
 
-// Show the first tab by default
+
 showTab('filamentTab');

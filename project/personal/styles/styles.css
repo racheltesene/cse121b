@@ -345,3 +345,31 @@ color: pink
     opacity: 0.5;
   }
 
+/* CSS for tabbed interface */
+.tab-button {
+  background-color: #007BFF; /* Change to your desired button background color */
+  color: #fff; /* Text color for tab buttons */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: #3FF3F5; /* Change to a darker shade for hover effect */
+}
+
+.tab-content {
+  padding: 20px;
+}
+
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
+}
+
+/* Add more specific styling as needed */

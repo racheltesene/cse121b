@@ -10,6 +10,8 @@
             display: none;
         }
     </style>
+    <script src="script.js"></script>
+
 </head>
 <body>
     <div id="navigation">
@@ -112,18 +114,6 @@
             </a>
         </div>
     </footer>
-    <script>
-        function showTab(tabId) {
-            const tabs = document.getElementsByClassName('tab');
-            for (let i = 0; i < tabs.length; i++) {
-                tabs[i].style.display = 'none';
-            }
-            document.getElementById(tabId).style.display = 'block';
-        }
-
-        // Show the first tab by default
-        showTab('filamentTab');
-    </script>
 </body>
 </html>
 
